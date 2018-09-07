@@ -14,7 +14,6 @@ public class UserClientHystrix implements FeignService{
 		user.setPassword("123456");
 		user.setPort(8858);
 		return user;
-//		throw new RuntimeException("can't get user info , server runtime exception !!!"); 
 	}
 
 }
