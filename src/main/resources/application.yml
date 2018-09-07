@@ -11,3 +11,4 @@ eureka:
         fetch-registry: true        # 是否检索服务
         service-url:
             defaultZone: http://localhost:9000/eureka/  # 注册中心访问地址
+

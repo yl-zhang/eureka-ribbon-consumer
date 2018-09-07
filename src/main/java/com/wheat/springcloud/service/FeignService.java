@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.wheat.springcloud.entity.User;
 
-@FeignClient(value = "eureka-provider")
+@FeignClient(value = "eureka-provider",fallback = UserClientHystrix.class)
 public interface FeignService {
 
 	@RequestMapping("/provider/user/get/{id}")
